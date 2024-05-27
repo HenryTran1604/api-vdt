@@ -9,5 +9,5 @@ FROM builder
 WORKDIR /src
 COPY --from=builder /app /src
 COPY .  .
-EXPOSE 8000
+# EXPOSE 8000
 CMD ["python", "-u", "app.py"]
